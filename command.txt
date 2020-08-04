@@ -1,0 +1,34 @@
+#Display all the hidden files in dir
+ls -Force "dir"
+
+#pwd - print-working directory
+
+#Display 1 page of the file in cmd
+more "filename"
+cat 'filename' -Head 10 #Diplay 10 dong dau tien
+cat 'filename' -Tail 10 #Display 10 dong cuoi cung
+
+#search for text
+Strings "word_search" 'file' | *.ext
+select-string
+
+#net command
+net user 'user' 'password' #chagne password
+
+#icacls command
+
+#create a symbolic link
+mklink
+
+#taskkill can find and halt a process in a few ways.
+taskkill /pid PID_number
+
+Get-Process -Name ...
+
+taskkill /F /PID #To end a process, you can use taskkill and
+					#specify the Process ID, or PID, of the process:
+
+#To share folder
+net share ShareMe=C:\Users\locvu\Desktop\ShareMe /grant:everyone.full
+
+#Tools Symantec Ghost
