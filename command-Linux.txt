@@ -1,0 +1,39 @@
+#Display 1 page of the file in cmd
+less "filename"
+#search
+/word_search
+#Display
+head
+tail
+
+#search
+grep 'word_search' 'file'
+
+chmod	#modify
+chown	#owner
+chgrp	#group
+
+#SetUID User's ID
+sudo chmod 4755 'file' | sudo chmod u+s 'file'
+
+#SetGID Group's ID
+sudo chmod g+s 'file' | sudo chmod 2755 'file'
+
+#enable Sticky Bit. Any one can add and modify files in the 
+#/tmp but only root or the owner can delete /tmp
+sudo chmod 1755 my_folder/ | sudo chmod +t my_folder/
+
+#dpkg manage packages
+dpkg -i package.deb
+
+#to create a hardlink
+ln -s file file_softlink
+
+#fdisk
+
+ps -ef
+#E flag is used to get all processes, even the ones run by other users. 
+#F flag is for full, which shows you full details about a process
+
+kill -TSTP	#to stop terminal with out end up, SIGTSTP signal
+kill -CONT	#to continue,  SIGCONT signal
