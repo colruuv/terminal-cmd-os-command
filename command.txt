@@ -32,3 +32,8 @@ taskkill /F /PID #To end a process, you can use taskkill and
 net share ShareMe=C:\Users\locvu\Desktop\ShareMe /grant:everyone.full
 
 #Tools Symantec Ghost
+
+#Managing Services in Windows
+Get-Service 'name_service' | Format-List	#Get add info on a service
+Stop-Service
+Start-Service
